@@ -1,0 +1,13 @@
+diff --git a/node_modules/@medusajs/medusa/dist/commands/utils/resolve-admin-cli.js b/node_modules/@medusajs/medusa/dist/commands/utils/resolve-admin-cli.js
+index d35db6e..4db0e42 100644
+--- a/node_modules/@medusajs/medusa/dist/commands/utils/resolve-admin-cli.js
++++ b/node_modules/@medusajs/medusa/dist/commands/utils/resolve-admin-cli.js
+@@ -7,7 +7,7 @@ exports.resolveAdminCLI = void 0;
+ var fs_extra_1 = __importDefault(require("fs-extra"));
+ var path_1 = __importDefault(require("path"));
+ function resolveAdminCLI() {
+-    var cli = path_1.default.resolve(require.resolve("@medusajs/admin"), "../../", "bin", "medusa-admin.js");
++    var cli = path_1.default.resolve(require.resolve("@hitesh-lin/admin"), "../../", "bin", "medusa-admin.js");
+     var binExists = fs_extra_1.default.existsSync(cli);
+     return {
+         binExists: binExists,
